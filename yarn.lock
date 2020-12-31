@@ -10611,6 +10611,11 @@ react-native-keychain@6.1.1:
   resolved "https://registry.yarnpkg.com/react-native-keychain/-/react-native-keychain-6.1.1.tgz#3c14e4df9e5599f8d5a708da75d27f9d2424d7c1"
   integrity sha512-WYvAg7FbYPyX8jJ1rY/IQGS+6zK5LtNMRa3E8x1n0M5Lmsm/9CHtakzbmqT+rLvFE7DpPBg7qFawMuUoDjjtYA==
 
+react-native-kustomerv2-sdk@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/react-native-kustomerv2-sdk/-/react-native-kustomerv2-sdk-0.0.13.tgz#b65b54572e44444dfc04a754a38758eb611468f9"
+  integrity sha512-2j26jM8pIvcBofLa1jXoGgMwztzU954AD2q+9WK9qBZVd/a07sQs/3zBn7NrPuOk4mVqpoHxwKW94pY0ifrgNw==
+
 react-native-localize@^1.0.0:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.4.3.tgz#6fde2fb1e73a7205910419a680cb4734187d556f"

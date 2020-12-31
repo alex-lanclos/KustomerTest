@@ -2,6 +2,8 @@ import React from "react"
 import { View, Image, ViewStyle, TextStyle, ImageStyle, SafeAreaView } from "react-native"
 import { useNavigation } from "@react-navigation/native"
 import { observer } from "mobx-react-lite"
+import KustomerSDK from "react-native-kustomerv2-sdk"
+
 import { Button, Header, Screen, Text, Wallpaper } from "../../components"
 import { color, spacing, typography } from "../../theme"
 const bowserLogo = require("./bowser.png")
@@ -106,7 +108,9 @@ export const WelcomeScreen = observer(function WelcomeScreen() {
             style={CONTINUE}
             textStyle={CONTINUE_TEXT}
             tx="welcomeScreen.continue"
-            onPress={nextScreen}
+            onPress={() => {
+              KustomerSDK.presentSupport()
+            }}
           />
         </View>
       </SafeAreaView>
