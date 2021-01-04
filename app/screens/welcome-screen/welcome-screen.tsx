@@ -64,6 +64,7 @@ const CONTINUE: ViewStyle = {
   paddingVertical: spacing[4],
   paddingHorizontal: spacing[4],
   backgroundColor: "#5D2555",
+  marginVertical: 20,
 }
 const CONTINUE_TEXT: TextStyle = {
   ...TEXT,
@@ -107,7 +108,27 @@ export const WelcomeScreen = observer(function WelcomeScreen() {
           <Button
             style={CONTINUE}
             textStyle={CONTINUE_TEXT}
-            tx="welcomeScreen.continue"
+            text="identify"
+            onPress={() => {
+              KustomerSDK.identify(
+                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGlmaWVyIjoiNTIxIiwibmFtZSI6Ikt5bGVNYW5hZ2VyIER1ZnJlbmUiLCJlbWFpbCI6Imt5bGUuZHVmcmVuZSttYW5hZ2VyQHdhaXRyYXBwLmNvbSIsImlhdCI6MTYwOTcyNDIzNjI0Nn0.bOU94fw70qluPttCQ1wSKFVjsotg-tWIWKkSWw0yFD0",
+              )
+            }}
+          />
+
+          <Button
+            style={CONTINUE}
+            textStyle={CONTINUE_TEXT}
+            text="logout"
+            onPress={() => {
+              KustomerSDK.logout()
+            }}
+          />
+
+          <Button
+            style={CONTINUE}
+            textStyle={CONTINUE_TEXT}
+            text="open support"
             onPress={() => {
               KustomerSDK.presentSupport()
             }}
